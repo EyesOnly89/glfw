@@ -19,9 +19,6 @@ project "GLFW"
 	}
 
 	filter "system:windows"
-		systemversion "latest"
-		staticruntime "On"
-
 		files
 		{
 			"src/win32_init.c",
@@ -40,6 +37,3 @@ project "GLFW"
 			"_GLFW_WIN32",
 			"_CRT_SECURE_NO_WARNINGS"
 		}
-
-	filter { "system:windows", "configurations:Release" }
-		buildoptions "/MT"
